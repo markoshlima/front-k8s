@@ -8,6 +8,7 @@ npm run serve
 
 **Build docker container** <br />
 docker build . -t markoshlima/front-k8s
+docker build . -t markoshlima/front-k8s --platform linux/amd64 //EKS
 
 **Start docker container** <br />
 docker run -it -p 5006:8080 -d markoshlima/front-k8s
